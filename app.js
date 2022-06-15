@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const INDICATORS_CONSTANTS = require("./constants");
+const INDICATOR_CONSTANTS = require("./constants");
 
 (async () => {
   const browser = await puppeteer.launch({
@@ -11,7 +11,7 @@ const INDICATORS_CONSTANTS = require("./constants");
     //slowMo: 250,
   });
 
-  console.log('====INDICATORS_CONSTANTS===', INDICATORS_CONSTANTS);
+  console.log('====INDICATOR_CONSTANTS===', INDICATOR_CONSTANTS);
 
   const page = await browser.newPage();
   await page.goto(
